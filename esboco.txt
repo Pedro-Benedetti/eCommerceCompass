@@ -1,0 +1,30 @@
+javascript
+
+pets:
+     sku: number
+     gender: FEMALE | MALE
+     age: number
+     size: SMALL | MEDIUM | LARGE
+     color: RED | APRICOT | BLACK | WHITE | BLACK & WHITE | SILVER | TAN 
+     vaccinated: boolean
+     dewormed: boolean
+     cert: boolean
+     microchip: boolean
+     location: string
+     created_at: Date
+     updated_at: Date
+     additional_information: string
+     name: string
+     price: number
+     images: []
+
+
+products:
+     sku: number
+     name: string
+     product_type: CAT | DOG
+     price: number
+     size: string
+     created_at: Date
+     updated_at: Date
+     images: []
