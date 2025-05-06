@@ -31,6 +31,8 @@ const ProductList: React.FC = () => {
      if (loading) return <p>Carregando products...</p>;
      if (error) return <p>Erro: {error}</p>;
 
+     if (!products.length) return <p>Products Empty</p>;
+
      return (
         <div style={styles.grid}>
             {products.map((product) => (
