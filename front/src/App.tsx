@@ -1,10 +1,12 @@
 import './App.css'
-import ProductList from './components/ProductsList'
+import SlideLovelyCustomer from './components/SlideLovelyCustomer'
 
 function App() {
-
+  const images = [
+    '/public/imagens/catfood1.png'
+]
   return (
-    <ProductList />
+    <SlideLovelyCustomer images={images}/>
   )
 }
 
