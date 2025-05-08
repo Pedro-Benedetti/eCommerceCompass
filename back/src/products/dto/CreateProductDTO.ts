@@ -1,23 +1,48 @@
 import { IsArray, IsEnum, IsNumber, IsString } from "class-validator";
-import { ProductType } from "src/common/enum/ProductType";
 
-export class CreateProductDTO{
-    @IsNumber()
-    sku: number;
+export enum Gender {
+  MALE = 'Male',
+  FEMALE = 'Female',
+}
 
-    @IsString()
-    name: string;
+export enum Size {
+  SMALL = 'Small',
+  MEDIUM = 'Medium',
+  LARGE = 'Large',
+}
 
-    @IsEnum(ProductType)
-    product_type: ProductType;
+export enum Color {
+  RED = 'Red',
+  APRICOT = 'Apricot',
+  BLACK = 'Black',
+  BLACK_WHITE = 'Black & White',
+  SILVER = 'Silver',
+  TAN = 'Tan',
+}
 
-    @IsNumber()
-    price: number;
+export class CreateProductDTO {
+  @IsString()
+  sku: string;
 
-    @IsString()
-    size: string;
+  @IsString()
+  name: string;
 
-    @IsArray()
-    @IsString({ each: true })
-    images: string[];
+  @IsNumber()
+  price: number;
+
+  @IsEnum(Gender)
+  gender: Gender;
+
+  @IsString()
+  age: string;
+
+  @IsEnum(Size)
+  size: Size;
+
+  @IsEnum(Color)
+  color: Color;
+
+  @IsArray()
+  @IsString({ each: true })
+  images: string[];
 }

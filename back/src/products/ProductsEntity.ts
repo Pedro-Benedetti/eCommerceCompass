@@ -3,11 +3,11 @@ import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class Products {
-    @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn()
   id: number;
 
   @Column({ unique: true })
-  sku: number;
+  sku: string;
 
   @Column()
   name: string;
@@ -20,6 +20,15 @@ export class Products {
 
   @Column()
   size: string;
+
+  @Column()
+  gender: string;
+
+  @Column()
+  age: string;
+
+  @Column()
+  color: string;
 
   @Column('text')
   images: string;

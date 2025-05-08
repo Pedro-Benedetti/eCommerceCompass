@@ -1,4 +1,4 @@
 export enum ProductType {
-    CAT = "CAT",
-    DOG = "DOG",
+    CAT = 'CAT',
+    DOG = 'DOG',
 }

@@ -6,18 +6,24 @@ type ProductsCardProps = {
 };
 
 const ProductCard: React.FC<ProductsCardProps> = ({ product }) => {
-    const { name, size, price, images } = product;
+    const { name, size, price, images, sku, gender, age, color } = product;
+
+    console.log('Imagens recebidas:', images);
 
     return (
         <div style={styles.card}>
             <img
-              src={images[0] || '/placeholder.jpg'}
+              src={images[0] ? images[0] : '/placeholder.jpg'}
               alt={name}
               style={styles.image}
         />
         <h2>{name}</h2>
-        <p>Size: {size}</p>
-        <p>Price: ${price.toFixed(2)}</p>
+            <p><strong>SKU:</strong> {sku}</p>
+            <p><strong>Gender:</strong> {gender}</p>
+            <p><strong>Age:</strong> {age}</p>
+            <p><strong>Size:</strong> {size}</p>
+            <p><strong>Color:</strong> {color}</p>
+            <p><strong>Price:</strong> ${price.toFixed(2)}</p>
         </div>
     );
 };
@@ -34,6 +40,7 @@ const styles = {
         width: '100%',
         height: 'auto',
         borderRadius: '8px',
+        marginBottom: '8px',
     },
 };
 
