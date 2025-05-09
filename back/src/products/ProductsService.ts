@@ -19,6 +19,15 @@ export class ProductsService {
         return await this.productRepository.save(productToSave);
     }
 
+    async createMany(products: CreateProductDTO[]): Promise<Products[]> {
+        const formattedProducts = products.map(product => ({
+            ...product,
+            images: product.images.join(','),
+        }));
+
+        return await this.productRepository.save(formattedProducts);
+    }
+
     async findAll(): Promise<Array<Omit<Products, 'images'> & { images: string[] }>> {
         const products = await this.productRepository.find();
 

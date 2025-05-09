@@ -1,11 +1,12 @@
-export type Product = {
-    id: number;
-    sku: number;
+export interface Product {
+    sku: string;
     name: string;
     price: number;
-    size: string;
-    gender: 'male' | 'female';
+    gender: string;
     age: string;
+    size: string;
     color: string;
     images: string[];
-};
+    // os campos extras da terceira página se quiser incluir também
+  }
+  

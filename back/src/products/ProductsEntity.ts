@@ -32,4 +32,26 @@ export class Products {
 
   @Column('text')
   images: string;
+
+  // Novos campos:
+  @Column()
+  vaccinated: boolean;
+
+  @Column()
+  dewormed: boolean;
+
+  @Column()
+  cert: boolean;
+
+  @Column()
+  microchip: boolean;
+
+  @Column()
+  location: string;
+
+  @Column({ name: 'published_date', type: 'timestamp' })
+  publishedDate: Date;
+
+  @Column({ type: 'text' })
+  additionalInformation: string;
 }

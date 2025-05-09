@@ -1,4 +1,4 @@
-import { IsArray, IsEnum, IsNumber, IsString } from "class-validator";
+import { IsArray, IsBoolean, IsEnum, IsNumber, IsString, IsDate } from "class-validator";
 
 export enum Gender {
   MALE = 'Male',
@@ -45,4 +45,26 @@ export class CreateProductDTO {
   @IsArray()
   @IsString({ each: true })
   images: string[];
+
+  // Novos campos:
+  @IsBoolean()
+  vaccinated: boolean;
+
+  @IsBoolean()
+  dewormed: boolean;
+
+  @IsBoolean()
+  cert: boolean;
+
+  @IsBoolean()
+  microchip: boolean;
+
+  @IsString()
+  location: string;
+
+  @IsString()
+  publishedDate: string; // Pode vir como string no Postman, será convertido para Date no Nest
+
+  @IsString()
+  additionalInformation: string;
 }

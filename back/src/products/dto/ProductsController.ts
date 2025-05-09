@@ -7,10 +7,16 @@ import { Products } from "../ProductsEntity";
 export class ProductsController {
     constructor(private readonly productsService: ProductsService) {}
 
+    //@Post()
+    //async create(@Body() createProductDTO: CreateProductDTO): Promise<Products> {
+    //    return this.productsService.create(createProductDTO);
+    //}
+
     @Post()
-    async create(@Body() createProductDTO: CreateProductDTO): Promise<Products> {
-        return this.productsService.create(createProductDTO);
+    createMany(@Body() products: CreateProductDTO[]) {
+      return this.productsService.createMany(products);
     }
+    
 
     @Get()
     async findAll(): Promise<Array<Omit<Products, 'images'> & { images: string[] }>> {
