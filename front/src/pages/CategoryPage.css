@@ -3,10 +3,12 @@
   gap: 40px;
   padding: 40px 0;
   align-items: flex-start;
+  justify-content: space-between; /* adiciona espaçamento balanceado */
 }
 
 .filters-sidebar {
-  width: 260px;
+  text-align: left;
+  width: 220px;
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 12px;
@@ -25,18 +27,21 @@
 
 .filter-group h5 {
   margin-bottom: 10px;
-  color: #444;
+  color: #002A48;
+  font-weight: 600;
 }
 
 .filter-group label {
   display: block;
+  text-align: left;
   margin-bottom: 8px;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .filter-group input[type="text"] {
-  width: 45%;
-  padding: 5px;
+  width: 80px;
+  padding: 6px;
   margin-right: 10px;
   font-size: 14px;
 }
@@ -47,8 +52,8 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .pet-card {

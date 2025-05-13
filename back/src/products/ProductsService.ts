@@ -39,4 +39,36 @@ export class ProductsService {
 
         return parsedProducts;
     }
+
+    async filterProducts(filters: {
+       gender?: string;
+       color?: string;
+       size?: string;
+       age?: string;
+  }): Promise<Array<Omit<Products, 'images'> & { images: string[] }>> {
+        const query = this.productRepository.createQueryBuilder('product');
+
+        if (filters.gender) {
+    query.andWhere('product.gender = :gender', { gender: filters.gender });
+  }
+        if (filters.color) {
+    query.andWhere('product.color = :color', { color: filters.color });
+  }
+        if (filters.size) {
+    query.andWhere('product.size = :size', { size: filters.size });
+  }
+        if (filters.age) {
+    query.andWhere('product.age = :age', { age: filters.age });
+  }
+
+  const products = await query.getMany();
+
+        return products.map(product => ({
+            ...product,
+      images: product.images.split(',').map(img =>
+      img.startsWith('/uploads') ? img : `/uploads/${img}`
+    ),
+  }));
+        }
+
 }
