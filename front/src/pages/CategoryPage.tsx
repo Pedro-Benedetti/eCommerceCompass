@@ -107,9 +107,8 @@ const CategoryPage: React.FC = () => {
 
      <p style={{paddingLeft: "calc((100% - 1140px) / 2)", paddingTop: "20px", paddingBottom: "10px"}}><Link to="/" style={{ color: '#002A48', textDecoration: 'none' }}>Home</Link> / Category</p>
 
-      {/* Conteúdo principal com filtros + produtos */}
       <section className="category-main-content container">
-        {/* Sidebar de Filtros */}
+        {/* Sidebar Filters */}
         <aside className="filters-sidebar">
           <h4>Filter</h4>
 
@@ -152,7 +151,7 @@ const CategoryPage: React.FC = () => {
           </div>
         </aside>
 
-        {/* Área dos Cards */}
+        {/* Cards */}
         <div className="products-area">
           <div className="card-grid">
             {products.map((product) => (

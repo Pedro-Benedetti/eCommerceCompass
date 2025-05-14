@@ -8,11 +8,11 @@
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif; /* Assuming Nunito Sans from visual similarity, fallback to sans-serif */
+  font-family: 'Nunito Sans', sans-serif; 
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF; /* Predominantly white background */
-  color: #2F2F2F; /* Default text color */
+  background-color: #FFFFFF; 
+  color: #2F2F2F; 
 }
 
 a {
@@ -36,13 +36,13 @@ a {
 }
 
 .navbar-logo img {
-  height: 40px; /* Placeholder */
+  height: 40px;
 }
 
 .navbar-logo span {
  font-weight: bold;
  font-size: 24px;
- color: #002A48; /* Dark Blue */
+ color: #002A48;
  margin-left: 8px;
 }
 
@@ -58,7 +58,7 @@ a {
 
 .nav-links a.active,
 .nav-links a:hover {
-  color: #002A48; /* Dark Blue */
+  color: #002A48;
 }
 
 .nav-actions {
@@ -83,14 +83,14 @@ a {
 }
 
 .btn-primary {
-  background-color: #002A48; /* Dark Blue */
+  background-color: #002A48;
   color: #FFFFFF;
   border: none;
 }
 
 .btn-secondary {
   background-color: #FFFFFF;
-  color: #002A48; /* Dark Blue */
+  color: #002A48;
   border: 1px solid #002A48;
 }
 
@@ -101,11 +101,11 @@ a {
 
 /**** Hero Section ****/
 .hero-section {
-  background-color: #FFF3E0; /* Light Beige/Cream */
+  background-color: #FFF3E0;
   padding: 60px 0;
   text-align: left;
-  position: relative; /* For background elements if any */
-  overflow: hidden; /* To contain any decorative shapes */
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -114,7 +114,7 @@ a {
 
 .hero-section h1 {
   font-size: 48px;
-  color: #002A48; /* Dark Blue */
+  color: #002A48;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -136,7 +136,7 @@ a {
   margin-right: 15px;
 }
 
-/* Placeholder for hero image/graphic - user will replace */
+/* Placeholder hero image/graphic */
 .hero-image-placeholder img {
   position: absolute;
   right: 5%;
@@ -189,13 +189,13 @@ a {
 
 .section-title h2 {
   font-size: 24px;
-  color: #002A48; /* Dark Blue */
+  color: #002A48;
   font-weight: 700;
 }
 
 .section-title p {
   font-size: 18px;
-  color: #002A48; /* Dark Blue */
+  color: #002A48;
   font-weight: bold;
   margin: 0;
 }
@@ -220,7 +220,7 @@ a {
 .pet-card-image, .product-card-image {
   width: 100%;
   height: 180px;
-  background-color: #E0E0E0; /* Placeholder color */
+  background-color: #E0E0E0;
   border-radius: 8px;
   margin-bottom: 10px;
   display: flex;
@@ -249,8 +249,8 @@ a {
 }
 
 .product-card-tag {
-  background-color: #FFF3E0; /* Light Beige/Cream */
-  color: #E65100; /* Orange accent */
+  background-color: #FFF3E0; 
+  color: #E65100;
   font-size: 10px;
   padding: 4px 8px;
   border-radius: 4px;
@@ -259,7 +259,7 @@ a {
 
 /**** Adoption Banner ****/
 .adoption-banner {
-  background-color: #FFF3E0; /* Light Beige/Cream */
+  background-color: #FFF3E0;
   padding: 40px;
   border-radius: 20px;
   display: flex;
@@ -276,7 +276,7 @@ a {
 
 .adoption-banner h2 {
   font-size: 36px;
-  color: #002A48; /* Dark Blue */
+  color: #002A48;
   font-weight: 800;
   margin-bottom: 10px;
 }
@@ -287,7 +287,7 @@ a {
   margin-bottom: 20px;
 }
 
-/* Placeholder for adoption banner image */
+/* Placeholder adoption banner image */
 .adoption-image-placeholder {
   width: 40%;
   max-height: 250px;
@@ -315,14 +315,14 @@ a {
 }
 
 .pet-sellers-logos img {
-  height: 40px; /* Placeholder */
+  height: 40px;
   filter: grayscale(100%);
   opacity: 0.7;
 }
 
 /**** Newsletter Banner ****/
 .newsletter-banner {
-  background-color: #002A48; /* Dark Blue */
+  background-color: #002A48;
   color: #FFFFFF;
   padding: 40px;
   border-radius: 20px;
@@ -353,7 +353,7 @@ a {
 
 /**** Footer ****/
 .footer {
-  background-color: #FFF3E0; /* Light Beige/Cream */
+  background-color: #FFF3E0; 
   padding: 40px 0 20px 0;
   font-size: 14px;
   color: #555555;
@@ -369,13 +369,13 @@ a {
 }
 
 .footer-logo img {
-  height: 30px; /* Placeholder */
+  height: 30px;
 }
 
 .footer-logo span {
  font-weight: bold;
  font-size: 20px;
- color: #002A48; /* Dark Blue */
+ color: #002A48;
  margin-left: 8px;
 }
 
@@ -417,9 +417,9 @@ a {
   gap: 15px;
 }
 
-/* Styles for Category Page */
+/* Styles Category Page */
 .category-header-banner {
-    background-color: #002A48; /* Dark Blue */
+    background-color: #002A48;
     color: #FFFFFF;
     padding: 50px 0;
     text-align: center;
@@ -450,11 +450,11 @@ a {
     max-width: 400px;
 }
 
-/* Placeholder for category banner image */
+/* Placeholder category banner image */
 .category-banner-image-placeholder {
-    width: 40%; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
-    background-color: #E0E0E0; /* Placeholder color */
+    width: 40%;
+    height: 200px;
+    background-color: #E0E0E0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -545,26 +545,26 @@ a {
     border-color: #002A48;
 }
 
-/* Styles for Product Detail Page (Contact Page like) */
+/* Styles Product Detail Page */
 .product-detail-layout {
     display: flex;
-    gap: 30px; /* Space between gallery and info */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px;
+    flex-wrap: wrap; 
 }
 
 .product-image-gallery {
-    flex: 0 0 45%; /* Gallery takes up 45% of the width */
-    max-width: 45%; /* Ensure it doesn't exceed 45% */
+    flex: 0 0 45%;
+    max-width: 45%;
 }
 
 .product-info {
-    flex: 1; /* Info section takes the remaining space */
-    min-width: 300px; /* Minimum width before wrapping for info section */
+    flex: 1;
+    min-width: 300px;
 }
 
 .main-product-image-placeholder {
     width: 100%;
-    /* height: 400px; /* Let height be auto based on image aspect ratio */
+    /* height: 400px; */
     background-color: #E0E0E0;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -573,7 +573,7 @@ a {
     justify-content: center;
     font-size: 24px;
     color: #777;
-    overflow: hidden; /* To respect border-radius with img */
+    overflow: hidden;
 }
 
 .main-product-image-placeholder img {
@@ -583,18 +583,18 @@ a {
 }
 
 .thumbnail-images {
-    display: grid; /* Changed to grid for better control */
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); /* Responsive thumbnails */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     gap: 10px;
 }
 
 .thumbnail-image-placeholder {
-    width: 100%; /* Fill grid cell */
-    aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
+    width: 100%;
+    aspect-ratio: 1 / 1;
     background-color: #E0E0E0;
     border-radius: 5px;
     cursor: pointer;
-    overflow: hidden; /* To respect border-radius with img */
+    overflow: hidden;
 }
 
 .thumbnail-image-placeholder img {
@@ -648,15 +648,15 @@ a {
 
 .guarantee-tags {
     display: flex;
-    flex-wrap: wrap; /* Allow tags to wrap */
-    gap: 10px; /* Reduced gap for tags */
+    flex-wrap: wrap;
+    gap: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .guarantee-tag {
-    background-color: #FFF3E0; /* Light Beige/Cream */
-    color: #E65100; /* Orange accent */
+    background-color: #FFF3E0;
+    color: #E65100;
     font-size: 12px;
     padding: 6px 10px;
     border-radius: 5px;
@@ -671,7 +671,7 @@ a {
 }
 
 .share-icons img {
-    height: 18px; /* Placeholder */
+    height: 18px;
 }
 
 .customer-reviews-section {
@@ -685,14 +685,13 @@ a {
 }
 
 .customer-review-cards {
-    display: grid; /* Changed to grid */
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* Responsive cards */
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .customer-review-card-placeholder {
-    /* min-width: 250px; /* Removed for grid */
-    aspect-ratio: 16 / 10; /* Maintain aspect ratio */
+    /* min-width: 250px; */
+    aspect-ratio: 16 / 10; 
     background-color: #F0F0F0;
     border-radius: 10px;
     padding: 15px;
@@ -710,7 +709,7 @@ a {
 }
 
 /* Responsive adjustments */
-@media (max-width: 992px) { /* Adjust breakpoint for tablets / smaller desktops */
+@media (max-width: 992px) { 
     .product-detail-layout {
         gap: 20px;
     }
@@ -720,7 +719,7 @@ a {
     }
 }
 
-@media (max-width: 768px) { /* Tablet and mobile */
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -744,7 +743,7 @@ a {
     text-align: center;
   }
   .hero-image-placeholder {
-    display: none; /* Hide complex image on small screens or adjust layout */
+    display: none;
   }
   .adoption-banner {
     flex-direction: column;
@@ -782,7 +781,7 @@ a {
     /* max-width: 1200px; /* Already set by container */
     /* margin-left: auto; /* Already set by container */
     /* margin-right: auto; /* Already set by container */
-    flex-direction: column; /* Stack filters and products */
+    flex-direction: column; 
   }
 
   .filters-sidebar, .products-area {
@@ -791,11 +790,11 @@ a {
 
   /* Product Detail Page Responsive Adjustments */
   .product-detail-layout {
-    flex-direction: column; /* Stack gallery and info on smaller screens */
+    flex-direction: column; 
   }
   .product-image-gallery,
   .product-info {
-    flex: 1 1 100%; /* Allow them to take full width when stacked */
+    flex: 1 1 100%; 
     max-width: 100%;
   }
 }

@@ -4,7 +4,6 @@ import '../App.css';
 import '../custom_styles.css';
 import { Link, useLocation } from 'react-router-dom';
 
-// Define the Product interface based on CategoryPage and user request
 interface Product {
   id: number;
   name: string;
@@ -73,12 +72,12 @@ const ProductDetailPage: React.FC = () => {
           <Link to="/">Home</Link> &gt; <Link to="/category">Dog</Link> &gt; {product.name}
         </div>
 
-        {/* Product Detail Section - Modified for side-by-side layout */}
+        {/* Product Detail Section */}
         <section className="product-detail-page">
-          {/* New wrapper for side-by-side layout */}
+          
           <div className="product-detail-layout" style={{ display: "flex", gap: "30px" }}> 
-            {/* Product Image Gallery */}
-            <div className="product-image-gallery" style={{ flex: "0 0 45%" }}> {/* Assign width to gallery */}
+            
+            <div className="product-image-gallery" style={{ flex: "0 0 45%" }}>
               <div className="main-product-image-placeholder" style={{border: "1px solid #eee", borderRadius: "10px", overflow: "hidden"}}>
                   <img src={displayImage} alt={product.name} style={{width: "100%", height: "auto", display: "block"}} />
               </div>
@@ -119,7 +118,7 @@ const ProductDetailPage: React.FC = () => {
             </div>
 
             {/* Product Info */}
-            <div className="product-info" style={{ flex: "1" }}> {/* Info takes remaining space */}
+            <div className="product-info" style={{ flex: "1" }}> 
               <p style={{color: "#777", fontSize: "0.9em", marginBottom: "5px"}}>SKU #{product.sku || 'N/A'}</p>
               <h1>{product.name}</h1>
               <p className="product-price-large">{product.price ? product.price.toLocaleString() : 'N/A'} VND</p>

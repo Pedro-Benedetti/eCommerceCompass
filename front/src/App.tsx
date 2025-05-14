@@ -1,10 +1,5 @@
-// App.tsx for Home Page structure
 import { Link } from 'react-router-dom';
 import './App.css';
-// import ProductList from './components/ProductsList'; // Will be part of the structure
-// import SlideLovelyCustomer from './components/SlideLovelyCustomer'; // Will be part of the structure
-// For now, App.tsx will represent the Home page.
-// Later, proper routing will be set up. For styling, this is enough.
 
 function App() {
 
@@ -37,18 +32,18 @@ function App() {
       <header className="navbar container">
         <div className="navbar-logo">
           <img src="/imagens/logo.png" alt="Monito Logo"></img>
-          {/* Placeholder for logo image */}
+          {/* Placeholder logo image */}
         </div>
         <nav className="nav-links">
           <Link to="/" className="active">Home</Link>
           <Link to="/category">Category</Link>
-          <Link to="/about">About</Link> {/* Se ainda não existir, pode deixar assim para o futuro */}
+          <Link to="/about">About</Link>
           <Link to="/product">Contact</Link>
         </nav>
         <div className="nav-actions">
           <input type="search" placeholder="Search something here!" className="search-bar" />
           <button className="btn btn-primary">Join the community</button>
-          <div className="currency-selector">VND ▼</div> {/* Added arrow for visual completeness */}
+          <div className="currency-selector">VND ▼</div>
         </div>
       </header>
 
@@ -58,10 +53,10 @@ function App() {
           <div className="container" style={{"display":"flex", "alignItems":"center", "gap":"30px"}}>
             <div className="hero-content">
               <h1>One More Friend</h1>
-              <h2 style={{"fontSize":"36px", "fontWeight":"bold", "color":"#002A48", "marginBottom":"20px"}}>Thousands More Fun!</h2> {/* Adjusted h2 based on figma */}
+              <h2 style={{"fontSize":"36px", "fontWeight":"bold", "color":"#002A48", "marginBottom":"20px"}}>Thousands More Fun!</h2>
               <p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!</p>
               <div className="hero-buttons">
-                <button className="btn btn-secondary">View Intro ▶</button> {/* Added icon placeholder */}
+                <button className="btn btn-secondary">View Intro ▶</button>
                 <button className="btn btn-primary">Explore Now</button>
               </div>
             </div>
@@ -93,7 +88,7 @@ function App() {
 
     </section>
 
-       {/* One More Friend Banner (smaller one, different background) */}
+       {/* One More Friend Banner */}
       <section className="hero-section" style={{ padding: "40px 0", backgroundColor: "#FCEED5" }}>
         <div className="container" style={{display: "flex", alignItems: "center", justifyContent: "space-between", gap: "30px"}}>
          <div className="hero-image-placeholder1">
